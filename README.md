@@ -1,2 +1,2 @@
 # GoogleAdRemove
-Chrome Extension to remove ads from google seach result
+Chrome Extension to remove ads from google search result
