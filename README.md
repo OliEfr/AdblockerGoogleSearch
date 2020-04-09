@@ -7,8 +7,6 @@ This extension is not available in chrome web store, as manipulating search resu
 ## How it works
 ![Screenshot](/resources/googleSearchAdblock1.png)
 
-![Screenshot](/resources/googleSearchAdblock2.png)
-
 ## How to install
 1. Download this repository
 2. go to chrome://extensions
