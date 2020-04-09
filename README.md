@@ -6,6 +6,7 @@ This extension is not available in chrome web store, as manipulating search resu
 
 ## How it works
 ![Screenshot](/resources/banner GoogleAdRemove.png)
+
 ![Screenshot](/resources/banner GoogleAdRemove2.png)
 
 ## How to install
