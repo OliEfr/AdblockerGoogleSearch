@@ -1,4 +1,4 @@
-//bad option
+// bad option
 /*document.addEventListener('DOMContentLoaded', function() {
   if(document.getElementById('tads')) {
     document.getElementById('tads').remove()
@@ -6,9 +6,9 @@
   }
 })*/
 
-//good option
-let removedAds = false;
-let timer = null;
+// good option
+let removedAds = null;
+let timerStarted = null;
 
 const observer = new MutationObserver(mutations => {
   mutations.forEach(mutation => {
@@ -37,8 +37,8 @@ const observer = new MutationObserver(mutations => {
         removedAds = true;
       }
 
-      if (removedAds && !timer) {
-        timer = true;
+      if (removedAds && !timerStarted) {
+        timerStarted = true;
         setTimeout(() => {
           observer.disconnect();
         }, 1);
