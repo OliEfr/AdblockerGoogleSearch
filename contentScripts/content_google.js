@@ -11,21 +11,27 @@ var removedAds = false;
 const observer = new MutationObserver(function(mutations) {
   mutations.forEach(function(mutation) {
     if (mutation.addedNodes && (mutation.addedNodes.length > 0)) {
+      const node1 = mutation.target.querySelector('[aria-label="Ads"]')
       // top ads
-      const node1 = mutation.target.querySelector("#tads");
+      const node2 = mutation.target.querySelector('#tads');
       // right ads
-      const node2 = mutation.target.querySelector(".commercial-unit-desktop-rhs");
+      const node3 = mutation.target.querySelector('.commercial-unit-desktop-rhs');
       // footer ads
-      const frNodes = mutation.target.querySelectorAll(".ads-fr");
-      if (frNodes) {
-        Array.from(frNodes).forEach(el => el.remove())
+      const node4 = mutation.target.querySelector('.ads-fr');
+
+      if (node4) {
+        node4.parentNode.removeChild(node4);
+      }
+
+      if (node1) {
+        node1.parentNode.removeChild(node1);
       }
 
       if (node2) {
-        node2.remove();
+        node2.parentNode.removeChild(node2);
       }
-      if (node1) {
-        node1.parentNode.removeChild(node1);
+      if (node3) {
+        node3.parentNode.removeChild(node3);
         removedAds = true;
       }
 
