@@ -18,7 +18,7 @@ Removes ads from google search results and moves real results up!
 
 
 # How to install Brave
-If you use Brave Browser it's builtin
+If you use Brave Browser the blocker is built into it.  
 Set your Trackers & Ads blocker to Aggressive for `www.google.com`
 
 <img width="366" alt="Screen Shot 2020-09-07 at 1 04 17 PM" src="https://user-images.githubusercontent.com/1016365/92418478-81f64480-f11c-11ea-803a-a49aaa6ce271.png">
