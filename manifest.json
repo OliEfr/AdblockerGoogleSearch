@@ -1,25 +1,35 @@
 {
-    "name": "Google Ad Remove",
-    "version": "1.4.0.0",
-    "description": "Removes all Ads from google search result",
-    "manifest_version": 2,
-    "content_scripts": [
-        {
-            "js": ["contentScripts/content_google.js"],
-            "run_at": "document_start",
-            "all_frames": true,
-            "matches": [
-              "https://www.google.de/*",
-              "https://www.google.com/*"
-            ]
-        }
-    ],
-    "icons": {
-      "16": "images/GoogleAdRemove16.png",
-      "32": "images/GoogleAdRemove32.png",
-      "48": "images/GoogleAdRemove64.png",
-      "128": "images/GoogleAdRemove128.png"
+  "name": "Google Ad Remove",
+  "version": "1.4.0.0",
+  "description": "Removes all Ads from google search result",
+  "manifest_version": 2,
+  "content_scripts": [
+    {
+      "css": [
+        "hide.css"
+      ],
+      "matches": [
+        "https://www.google.de/*",
+        "https://www.google.com/*"
+      ]
     },
-    "browser_action": {"default_popup": "popup.html"}
-
+    {
+      "js": ["contentScripts/content_google.js"],
+      "run_at": "document_start",
+      "all_frames": true,
+      "matches": [
+        "https://www.google.de/*",
+        "https://www.google.com/*"
+      ]
+    }
+  ],
+  "icons": {
+    "16": "images/GoogleAdRemove16.png",
+    "32": "images/GoogleAdRemove32.png",
+    "48": "images/GoogleAdRemove64.png",
+    "128": "images/GoogleAdRemove128.png"
+  },
+  "browser_action": {
+    "default_popup": "popup.html"
   }
+}
