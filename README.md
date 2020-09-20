@@ -1,8 +1,12 @@
 # AdblockerGoogleSearch
 
-This extension is not available in chrome web store, as manipulating search results does not comply with googles guidelines.
+This extension is not available in chrome web store, as manipulating search results does not comply with googles guidelines.  
+
+Also consider removing Ads/Promoted/Trends on your Twitter feed search results via [remove-twitter-social-dilemma](https://github.com/PatrickJS/remove-twitter-social-dilemma)
 
 If you use Brave Browser [click here](#how-to-install-brave)
+
+
 
 ## How it works
 Removes ads from google search results and moves real results up!
