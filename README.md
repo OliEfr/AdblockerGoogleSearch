@@ -2,6 +2,8 @@
 
 This extension is not available in chrome web store, as manipulating search results does not comply with googles guidelines.
 
+**Note on copyright and license:** information will be included shortly in this repo. If you need any information now, contact me @olli.dev97@gmail.com
+
 ## How it works
 Removes ads from google search results and moves real results up!
 
